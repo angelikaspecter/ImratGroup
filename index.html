@@ -166,14 +166,47 @@
                 class="header__mobile-nav-icon header__mobile-nav-icon--close hide"></button>
     </header>
     <main>
-        <section class="about">
+        <section class="about about__row">
             <h2 class="title title--section">Imrat Group:</h2>
-            <p class="desc desc--large">Investment company created by specialists who have many years of experience in asset management, as well as developed skills in analysing current and future trends.</p>
+            <p class="desc desc--large">Investment company created by specialists who have many years of experience in
+                asset management, as well as developed skills in analysing current and future trends.</p>
+        </section>
+        <section class="about about__column">
+            <header class="about__tabs">
+                <button class="about__tab" id="TabOne"><img loading="lazy" src="img/dot.svg" width="14" height="20"
+                        alt="active Market leader" class="about__tab-icon" id="TabOneIcon"><span
+                        class="desc desc--normal desc--dark">Market leader</span></button>
+                <button class="about__tab" id="TabTwo"><img loading="lazy" src="img/dot.svg" width="14" height="20"
+                        alt="active Market leader" class="about__tab-icon hide" id="TabTwoIcon"><span
+                        class="desc desc--normal desc--dark">Finance</span></button>
+            </header>
+            <ul class="about__tabs-info">
+                <li class="about__tabs-item" id="TabInfoOne">
+                    <div class="about__tab-info">
+                        <h3 class="title title--wrap title--dark">Professionalism</h3>
+                        <p class="desc desc--larger desc--dark">Our company combines earning, development and implementation of new technologies in various startups and cryptocurrencies, which allows the company to generate constant income.</p>
+                    </div>
+                    <div class="about__tab-info">
+                        <h3 class="title title--wrap title--dark">Reliability</h3>
+                        <p class="desc desc--larger desc--dark">Having gathered a team of experts in the field of investing, trading and blockchain specialists, we are constantly working to improve all our performance indicators. That is why ImratGroup constantly demonstrates high profitability and stability in the market. </p>
+                    </div>
+                </li>
+                <li class="about__tabs-item hide" id="TabInfoTwo">
+                    <div class="about__tab-info">
+                        <h3 class="title title--wrap title--dark">Professionalism 2</h3>
+                        <p class="desc desc--larger desc--dark">Our company combines earning, development and implementation of new technologies in various startups and cryptocurrencies, which allows the company to generate constant income.</p>
+                    </div>
+                    <div class="about__tab-info">
+                        <h3 class="title title--wrap title--dark">Reliability 2</h3>
+                        <p class="desc desc--larger desc--dark">Having gathered a team of experts in the field of investing, trading and blockchain specialists, we are constantly working to improve all our performance indicators. That is why ImratGroup constantly demonstrates high profitability and stability in the market. </p>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section class="news">
             <header class="news__header">
                 <h2 class="title title--section">News</h2>
-                <a href="" class="news__link desc desc--middle desc--color">Discover More</a>
+                <a href="" class="news__link news__link--border desc desc--middle desc--color">Discover More</a>
             </header>
             <ul class="news__list">
                 <li class="news__item news__item--large">
@@ -186,32 +219,36 @@
                             <p class="title title--pretitle title--middle">Blockchain</p>
                             <h3 class="title title--post-title title--dark">Blockchain Innovations Boost Earnings</h3>
                         </div>
-                        <p class="desc desc--small desc--middle"><span class="desc desc--small desc--color">3h ago</span> | <span class="desc desc--small desc--middle">by William Granski</span></p>
+                        <p class="desc desc--small desc--middle"><span class="desc desc--small desc--color">3h
+                                ago</span> | <span class="desc desc--small desc--middle">by William Granski</span></p>
                     </div>
                 </li>
                 <li class="news__item news__item--small">
                     <a href="" class="news__link">
                         <img src="img/img_2.webp" width="360" height="270" alt="Crypto Solutions Ensure Stability"
-                        class="news__img news__img--small">
+                            class="news__img news__img--small">
                     </a>
                     <div class="news__info">
                         <div class="title__wrap">
                             <p class="title title--pretitle title--middle">Blockchain</p>
                             <h3 class="title title--post-title title--dark">Crypto Solutions Ensure Stability</h3>
                         </div>
-                        <p class="desc desc--small desc--middle"><span class="desc desc--small desc--color">3h ago</span> | <span class="desc desc--small desc--middle">by William Granski</span></p>
+                        <p class="desc desc--small desc--middle"><span class="desc desc--small desc--color">3h
+                                ago</span> | <span class="desc desc--small desc--middle">by William Granski</span></p>
                     </div>
                 </li>
                 <li class="news__item news__item--large">
                     <a href="" class="news__link">
                         <img src="img/img_3.webp" width="360" height="433" alt="Expert Team Drives Profitability"
-                        class="news__img news__img--large">
+                            class="news__img news__img--large">
                         <div class="news__info">
                             <div class="title__wrap">
                                 <p class="title title--pretitle title--middle">Blockchain</p>
                                 <h3 class="title title--post-title title--dark">Expert Team Drives Profitability</h3>
                             </div>
-                            <p class="desc desc--small desc--middle"><span class="desc desc--small desc--color">3h ago</span> | <span class="desc desc--small desc--middle">by William Granski</span></p>
+                            <p class="desc desc--small desc--middle"><span class="desc desc--small desc--color">3h
+                                    ago</span> | <span class="desc desc--small desc--middle">by William Granski</span>
+                            </p>
                         </div>
                     </a>
                 </li>
@@ -234,8 +271,7 @@
                         <div class="footer__subscribe-form-wrap">
                             <input type="checkbox" name="terms" id="terms"> <label for="terms"
                                 class="desc desc--small desc--light">I have read and
-                                accepted the <a href="privacy.html"
-                                    class="desc desc--small desc--light">Terms &
+                                accepted the <a href="privacy.html" class="desc desc--small desc--light">Terms &
                                     Privacy</a></label>
                         </div>
                     </form>
@@ -294,7 +330,8 @@
                             <a href="faq.html" class="desc desc--normal desc--light footer__nav-link">FAQ</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="policy.html" class="desc desc--normal desc--light footer__nav-link">Private Policy</a>
+                            <a href="policy.html" class="desc desc--normal desc--light footer__nav-link">Private
+                                Policy</a>
                         </li>
                     </ul>
                 </li>
@@ -357,12 +394,14 @@
                 offers are made without any obligation. The ImratGroup reserves the right to modify, delete or
                 supplement the contents of the website without prior notice and to remove publications on the Internet
                 temporarily or permanently.</p>
-            <p class="footer__desc footer__desc--bold desc desc--smaller desc--light"><span>Legal effect of this disclaimer</span></p>
+            <p class="footer__desc footer__desc--bold desc desc--smaller desc--light"><span>Legal effect of this
+                    disclaimer</span></p>
             <p class="desc desc--smaller desc--light">This disclaimer is to be considered as part of the internet
                 offer containing a link to this website. If any part or individual terms of this document are held
                 invalid or unenforceable under applicable law, this will not affect the remaining parts of this
                 document, their contents or legal validity.</p>
-            <p class="footer__desc footer__desc--bold desc desc--smaller desc--light"><span>Right of authorship and right of designation</span></p>
+            <p class="footer__desc footer__desc--bold desc desc--smaller desc--light"><span>Right of authorship and
+                    right of designation</span></p>
             <p class="desc desc--smaller desc--light">The ImratGroup endeavors to indicate the authorship of the
                 graphics, audio files, video sequences and texts used by him in all publications, to use his own
                 graphics, audio files, video sequences and texts or to use graphics, audio files, video sequences and

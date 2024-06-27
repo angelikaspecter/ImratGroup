@@ -30,6 +30,13 @@
         @media screen and (max-width: 767.98px) {
             gap: 18px;
         }
+        &--border {
+            border-bottom: 1px solid var(--accident-color);
+            &:hover {
+                color: var(--middle-primary);
+                border-bottom: 1px solid var(--middle-primary);
+            }
+        }
     }
     &__list {
         width: 100%;

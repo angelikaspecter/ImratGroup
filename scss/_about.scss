@@ -2,14 +2,95 @@
     padding: 72px 144px;
     background-color: var(--light-primary);
     display: flex;
-    flex-direction: column;
-    gap: 50px;
     @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-        gap: 40px;
-        padding: 72px 32px;
+        padding: 40px 32px;
     }
     @media screen and (max-width: 767.98px) {
-        gap: 40px;
-        padding: 72px 20px;
+        padding: 40px 20px;
+    }
+    &__row {
+        align-items: center;
+        gap: 18px;
+        & .desc {
+            margin-top: 10px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            & .title {
+                min-width: 270px;
+                max-width: 270px;
+            }
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 9px;
+            & .desc {
+                margin-top: 0;
+            }
+        }
+    }
+    &__column {
+        flex-direction: column;
+    }
+    &__tabs {
+        width: 100%;
+        padding: 0 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        border-bottom: 1px solid var(--accident-color-opacity);
+    }
+    &__tab {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 9px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__tab-icon {
+        margin-bottom: 1px;
+        &.hide {
+            display: none;
+        }
+    }
+    &__tabs-info {
+        width: 100%;
+        list-style: none;
+    }
+    &__tabs-item {
+        width: 100%;
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        &.hide {
+            display: none;
+        }
+    }
+    &__tab-info {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 50px 0;
+        & .title {
+            width: 100%;
+            min-width: 220px;
+            max-width: 300px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            gap: 18px;
+            padding: 20px 0;
+            & .title {
+                min-width: 270px;
+                max-width: 270px;
+            }
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-wrap: wrap;
+            gap: 9px;
+            padding: 20px 0;
+        }
     }
 }
