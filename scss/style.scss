@@ -13,6 +13,7 @@
 @import "_scrollbar";
 @import "_checkbox";
 @import "_header";
+@import "_about";
 @import "_news";
 @import "_footer";
 
@@ -32,28 +33,99 @@
     &--main {
     }
     &--section {
-        @include h2;
+        font-size: 72px;
         font-weight: 400;
         color: var(--accident-color);
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 42px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 36px;
+        }
     }
     &--post-title {
-        @include h5;
+        font-size: 24px;
+        letter-spacing: -5%;
         font-weight: 500;
-        color: var(--dark-primary);
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 16px;
+        }
     }
     &--pretitle {
-        @include desc-small;
+        font-size: 16px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 12px;
+        }
+    }
+    &--light {
+        color: var(--light-primary);
+    }
+    &--dark {
+        color: var(--dark-primary);
+    }
+    &--middle {
         color: var(--middle-primary);
+    }
+    &--color {
+        color: var(--accident-color);
     }
 }
 
 .desc {
-    &--color {
-        @include desc-small;
-        color: var(--accident-color);
+    &--large {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -1%;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 16px;
+        }
     }
-    &--main {
-        @include desc-small;
+    &--normal {
+        font-size: 18px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 14px;
+        }
+    }
+    &--small {
+        font-size: 16px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 12px;
+        }
+    }
+    &--smaller {
+        font-size: 14px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 767.98px) {
+            font-size: 12px;
+        }
+    }
+    &--light {
+        color: var(--light-primary);
+    }
+    &--dark {
+        color: var(--dark-primary);
+    }
+    &--middle {
         color: var(--middle-primary);
+    }
+    &--color {
+        color: var(--accident-color);
     }
 }

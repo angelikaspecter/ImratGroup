@@ -42,20 +42,8 @@
         }
     }
     &__desc {
-        &--classic {
-            @include desc;
-        }
-        &--normal {
-            @include desc-small;
-        }
-        &--small {
-            @include footer-desc;
-        }
-        &--light {
-            color: var(--light-primary);
-        }
-        &--color {
-            color: var(--middle-primary);
+        &--bold {
+            font-weight: 500;
         }
         &--size {
             max-width: 75%;
@@ -96,18 +84,6 @@
             @media screen and (max-width: 767.98px) {
                 display: none;
             }
-        }
-    }
-    &__subscribe-desc {
-        @include desc;
-        &--light {
-            color: var(--light-primary);
-        }
-        &--color {
-            color: var(--middle-primary);
-        }
-        &--small {
-            @include desc-small;
         }
     }
     &__subscribe-icon {
@@ -219,16 +195,11 @@
         }
     }
     &__nav-link {
-        @include desc;
         font-style: normal;
-        color: var(--light-primary);
         text-decoration: none;
         cursor: pointer;
         &:hover {
             color: var(--middle-primary);
-        }
-        @media screen and (max-width: 767.98px) {
-            @include desc-small;
         }
     }
 }

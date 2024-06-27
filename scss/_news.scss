@@ -9,7 +9,7 @@
         padding: 72px 32px;
     }
     @media screen and (max-width: 767.98px) {
-        gap: 40px;
+        gap: 30px;
         padding: 72px 20px;
     }
     &__header {
@@ -19,18 +19,16 @@
         gap: 40px;
     }
     &__link {
-        @include desc;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
         text-decoration: none;
-        border-bottom: 1px solid var(--accident-color);
-        &--color {
-            color: var(--accident-color);
-            &:hover {
-                color: var(--middle-primary);
-                border-bottom: 1px solid var(--middle-primary);
-            }
+        cursor: pointer;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            gap: 18px;
         }
-        &--post {
-            border: none;
+        @media screen and (max-width: 767.98px) {
+            gap: 18px;
         }
     }
     &__list {

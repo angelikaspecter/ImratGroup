@@ -95,7 +95,16 @@
         gap: 4px;
         padding: 12px 24px;
         text-decoration: none;
-        @include nav-link;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--middle-primary);
+        background-color: var(--light-primary);
+        &:hover,
+        &:active,
+        &:focus {
+            color: var(--accident-color);
+            background-color: var(--accident-color-opacity);
+        }
         &--mobile {
             @media screen and (min-width: 768px) and (max-width: 1439.98px) {
                 width: 100%;
@@ -162,7 +171,16 @@
         gap: 4px;
         padding: 12px 24px;
         text-decoration: none;
-        @include nav-link;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--middle-primary);
+        background-color: var(--light-primary);
+        &:hover,
+        &:active,
+        &:focus {
+            color: var(--accident-color);
+            background-color: var(--accident-color-opacity);
+        }
         &--mobile {
             @media screen and (min-width: 768px) and (max-width: 1439.98px) {
                 color: var(--dark-primary);
@@ -220,20 +238,75 @@
         border: none;
         cursor: pointer;
         &--primary {
-            @include btn-primary;
+            padding: 12px 24px;
+            border-radius: 24px;
+            color: var(--light-primary);
+            font-weight: 600;
+            background-color: var(--accident-color);
+            &:hover {
+                background-color: rgba(57, 112, 106, 1);
+            }
+            &:focus,
+            &:active {
+                background-color: rgba(31, 59, 56, 1);
+            }
+            &:disabled {
+                color: rgba(129, 153, 151, 1);
+                background-color: rgba(213, 221, 220, 1);
+            }
         }
         &--secondary {
-            @include btn-secondary;
+            padding: 12px 24px;
+            border-radius: 24px;
+            color: var(--accident-color);
+            font-weight: 600;
+            background-color: transparent;
+            &:hover {
+                color: rgba(31, 59, 56, 1)
+            }
+            &:focus,
+            &:active {
+                color: rgba(31, 59, 56, 1)
+            }
+            &:disabled {
+                color: rgba(129, 153, 151, 1);
+            }
         }
         &--main-lang {
-            @include btn-lang;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            position: relative;
+            padding: 12px 24px;
+            color: var(--dark-primary);
+            font-size: 14px;
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--accident-color);
+                background-color: var(--accident-color-opacity);
+            }
             padding: 0;
             &:hover {
                 background-color: transparent;
             }
         }
         &--lang {
-            @include btn-lang;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            position: relative;
+            padding: 12px 24px;
+            color: var(--dark-primary);
+            font-size: 14px;
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--accident-color);
+                background-color: var(--accident-color-opacity);
+            }
         }
         &--mobile {
             @media screen and (min-width: 768px) and (max-width: 1439.98px) {
@@ -270,7 +343,21 @@
         }
     }
     &__mobile-nav {
-        @include btn-mobile-nav;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: rgba(45, 85, 81, 0.1);
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(57, 112, 106, 0.25);
+        }
+        &:focus,
+        &:active {
+            background-color: rgba(9, 102, 253, 0.05);
+        }
         @media screen and (min-width: 1440px) {
             display: none;
         }
