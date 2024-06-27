@@ -190,3 +190,23 @@
 		font-weight: 500;
 	}
 }
+
+@mixin desc {
+	font-size: 18px;
+	@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+	@media screen and (max-width: 767.98px) {
+		font-size: 16px;
+	}
+}
+
+@mixin desc-small {
+	font-size: 16px;
+	@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+		font-size: 12px;
+	}
+	@media screen and (max-width: 767.98px) {
+		font-size: 12px;
+	}
+}
