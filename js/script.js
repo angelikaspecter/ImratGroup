@@ -97,18 +97,4 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation();
         });
     });
-
-    document.getElementById('TabOne').addEventListener('click', function() {
-        document.getElementById('TabInfoOne').classList.remove('hide');
-        document.getElementById('TabInfoTwo').classList.add('hide');
-        document.getElementById('TabOneIcon').classList.remove('hide');
-        document.getElementById('TabTwoIcon').classList.add('hide');
-    });
-
-    document.getElementById('TabTwo').addEventListener('click', function() {
-        document.getElementById('TabInfoOne').classList.add('hide');
-        document.getElementById('TabInfoTwo').classList.remove('hide');
-        document.getElementById('TabOneIcon').classList.add('hide');
-        document.getElementById('TabTwoIcon').classList.remove('hide');
-    });
 });

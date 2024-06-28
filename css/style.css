@@ -642,7 +642,6 @@ input[type=checkbox]:checked + label::after {
   padding: 9px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 .about__tab-icon {
   margin-bottom: 1px;
