@@ -18,6 +18,7 @@
 @import "_innovation";
 @import "_balance";
 @import "_news";
+@import "_privacy";
 @import "_footer";
 
 * {
@@ -147,7 +148,6 @@
         color: var(--accident-color);
     }
 }
-
 
 .btn {
     &--primary {
