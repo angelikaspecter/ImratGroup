@@ -8,7 +8,6 @@
 }
 
 @import "_fonts";
-@import "_mixins";
 @import "_outline";
 @import "_scrollbar";
 @import "_checkbox";
@@ -146,5 +145,64 @@
     }
     &--color {
         color: var(--accident-color);
+    }
+}
+
+
+.btn {
+    &--primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border-radius: 24px;
+        color: var(--light-primary);
+        font-weight: 600;
+        background-color: var(--accident-color);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(57, 112, 106, 1);
+        }
+        &:focus,
+        &:active {
+            background-color: rgba(31, 59, 56, 1);
+        }
+        &:disabled {
+            color: rgba(129, 153, 151, 1);
+            background-color: rgba(213, 221, 220, 1);
+        }
+    }
+    &--secondary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border-radius: 24px;
+        color: var(--accident-color);
+        font-weight: 600;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            color: rgba(31, 59, 56, 1)
+        }
+        &:focus,
+        &:active {
+            color: rgba(31, 59, 56, 1)
+        }
+        &:disabled {
+            color: rgba(129, 153, 151, 1);
+        }
+    }
+    &--mobile {
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 767.98px) {
+            width: 100%;
+        }
     }
 }

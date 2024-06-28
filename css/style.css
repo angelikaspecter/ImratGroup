@@ -229,7 +229,7 @@ input[type=checkbox]:checked + label::after {
     background-color: var(--light-primary);
     z-index: 999;
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     height: calc(100vh - 120px);
     padding: 18px 16px;
   }
@@ -327,6 +327,7 @@ input[type=checkbox]:checked + label::after {
   background-color: var(--light-primary);
   border: 2px solid #fff;
   box-shadow: 0px 2px 8.3px 0px rgba(0, 0, 0, 0.08);
+  z-index: 999;
 }
 .header__nav-dropdown.hide {
   display: none;
@@ -393,6 +394,7 @@ input[type=checkbox]:checked + label::after {
   list-style: none;
   display: flex;
   gap: 12px;
+  position: relative;
 }
 @media screen and (min-width: 1440px) {
   .header__btns--mobile {
@@ -402,15 +404,13 @@ input[type=checkbox]:checked + label::after {
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .header__btns--mobile {
     flex-direction: column;
-    width: 100%;
-    margin-top: auto;
+    gap: 24px;
+    height: auto;
   }
 }
 @media screen and (max-width: 767.98px) {
   .header__btns--mobile {
     flex-direction: column;
-    width: 100%;
-    margin-top: auto;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -440,43 +440,6 @@ input[type=checkbox]:checked + label::after {
 }
 .header__btn-lang {
   position: relative;
-}
-.header__btn {
-  border: none;
-  cursor: pointer;
-}
-.header__btn--primary {
-  padding: 12px 24px;
-  border-radius: 24px;
-  color: var(--light-primary);
-  font-weight: 600;
-  background-color: var(--accident-color);
-}
-.header__btn--primary:hover {
-  background-color: rgb(57, 112, 106);
-}
-.header__btn--primary:focus, .header__btn--primary:active {
-  background-color: rgb(31, 59, 56);
-}
-.header__btn--primary:disabled {
-  color: rgb(129, 153, 151);
-  background-color: rgb(213, 221, 220);
-}
-.header__btn--secondary {
-  padding: 12px 24px;
-  border-radius: 24px;
-  color: var(--accident-color);
-  font-weight: 600;
-  background-color: transparent;
-}
-.header__btn--secondary:hover {
-  color: rgb(31, 59, 56);
-}
-.header__btn--secondary:focus, .header__btn--secondary:active {
-  color: rgb(31, 59, 56);
-}
-.header__btn--secondary:disabled {
-  color: rgb(129, 153, 151);
 }
 .header__btn--main-lang {
   display: flex;
@@ -509,16 +472,6 @@ input[type=checkbox]:checked + label::after {
 .header__btn--lang:hover, .header__btn--lang:active, .header__btn--lang:focus {
   color: var(--accident-color);
   background-color: var(--accident-color-opacity);
-}
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .header__btn--mobile {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .header__btn--mobile {
-    width: 100%;
-  }
 }
 .header__btn-dropdown {
   width: 100%;
@@ -1904,4 +1857,60 @@ input[type=checkbox]:checked + label::after {
 }
 .desc--color {
   color: var(--accident-color);
+}
+
+.btn--primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 24px;
+  color: var(--light-primary);
+  font-weight: 600;
+  background-color: var(--accident-color);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary:hover {
+  background-color: rgb(57, 112, 106);
+}
+.btn--primary:focus, .btn--primary:active {
+  background-color: rgb(31, 59, 56);
+}
+.btn--primary:disabled {
+  color: rgb(129, 153, 151);
+  background-color: rgb(213, 221, 220);
+}
+.btn--secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 24px;
+  color: var(--accident-color);
+  font-weight: 600;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn--secondary:hover {
+  color: rgb(31, 59, 56);
+}
+.btn--secondary:focus, .btn--secondary:active {
+  color: rgb(31, 59, 56);
+}
+.btn--secondary:disabled {
+  color: rgb(129, 153, 151);
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .btn--mobile {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .btn--mobile {
+    width: 100%;
+  }
 }

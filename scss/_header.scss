@@ -33,7 +33,7 @@
                 background-color: var(--light-primary);
                 z-index: 999;
                 width: 100%;
-                max-width: 200px;
+                max-width: 250px;
                 height: calc(100vh - 120px);
                 padding: 18px 16px;
                 &.hide {
@@ -128,6 +128,7 @@
         background-color: var(--light-primary);
         border: 2px solid #fff;
         box-shadow: 0px 2px 8.3px 0px rgba(0, 0, 0, 0.08);
+        z-index: 999;
         &.hide {
             display: none;
         }
@@ -194,19 +195,18 @@
         list-style: none;
         display: flex;
         gap: 12px;
+        position: relative;
         &--mobile {
             @media screen and (min-width: 1440px) {
                 display: none;
             }
             @media screen and (min-width: 768px) and (max-width: 1439.98px) {
                 flex-direction: column;
-                width: 100%;
-                margin-top: auto;
+                gap: 24px;
+                height: auto;
             }
             @media screen and (max-width: 767.98px) {
                 flex-direction: column;
-                width: 100%;
-                margin-top: auto;
             }
         }
         &--mobile-lang {
@@ -235,43 +235,6 @@
         position: relative;
     }
     &__btn {
-        border: none;
-        cursor: pointer;
-        &--primary {
-            padding: 12px 24px;
-            border-radius: 24px;
-            color: var(--light-primary);
-            font-weight: 600;
-            background-color: var(--accident-color);
-            &:hover {
-                background-color: rgba(57, 112, 106, 1);
-            }
-            &:focus,
-            &:active {
-                background-color: rgba(31, 59, 56, 1);
-            }
-            &:disabled {
-                color: rgba(129, 153, 151, 1);
-                background-color: rgba(213, 221, 220, 1);
-            }
-        }
-        &--secondary {
-            padding: 12px 24px;
-            border-radius: 24px;
-            color: var(--accident-color);
-            font-weight: 600;
-            background-color: transparent;
-            &:hover {
-                color: rgba(31, 59, 56, 1)
-            }
-            &:focus,
-            &:active {
-                color: rgba(31, 59, 56, 1)
-            }
-            &:disabled {
-                color: rgba(129, 153, 151, 1);
-            }
-        }
         &--main-lang {
             display: flex;
             align-items: center;
@@ -306,14 +269,6 @@
             &:focus {
                 color: var(--accident-color);
                 background-color: var(--accident-color-opacity);
-            }
-        }
-        &--mobile {
-            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-                width: 100%;
-            }
-            @media screen and (max-width: 767.98px) {
-                width: 100%;
             }
         }
     }
