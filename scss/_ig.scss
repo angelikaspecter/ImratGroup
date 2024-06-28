@@ -7,10 +7,10 @@
         background-color: var(--accident-color);
         position: relative;
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-            background-color: transparent;
+            flex-direction: column-reverse;
         }
         @media screen and (max-width: 767.98px) {
-            background-color: transparent;
+            flex-direction: column-reverse;
         }
     }
     &__item {
@@ -24,17 +24,9 @@
             gap: 40px;
             @media screen and (min-width: 768px) and (max-width: 1439.98px) {
                 padding: 40px 32px 40px 32px;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                height: auto;
             }
             @media screen and (max-width: 767.98px) {
                 padding: 40px 20px 40px 20px;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                height: auto;
             }
         }
     }
@@ -52,7 +44,11 @@
     &__img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &__btn {
         max-width: 192px;

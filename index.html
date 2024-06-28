@@ -210,7 +210,12 @@
                     <a href="" class="ig__btn"><span class="desc desc--small desc--color">IG Index</span></a>
                 </li>
                 <li class="ig__item">
-                    <img loading="lazy" src="img/img_4.webp" width="700" height="673" alt="IG Index" class="ig__img">
+                    <picture class="ig__img">
+                        <source media="(max-width: 767.98px)" srcset="img/img_4-mobile.webp" width="375" height="190" alt="IG Index">
+                        <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/img_4-tablet.webp" width="768" height="280" alt="IG Index">
+                        <source media="(min-width:1440px)" srcset="img/img_4-desktop.webp" width="700" height="673" alt="IG Index">
+                        <img src="img/img_4-desktop.webp" width="700" height="673" alt="IG Index" />
+                    </picture>
                 </li>
             </ul>
         </section>
@@ -232,6 +237,9 @@
                     <a href="" class="innovation__btn"><span class="desc desc--normal desc--color">IG Future</span></a>
                 </li>
             </ul>
+        </section>
+        <section class="balance">
+
         </section>
         <section class="news">
             <header class="news__header">

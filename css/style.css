@@ -705,12 +705,12 @@ input[type=checkbox]:checked + label::after {
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .ig__list {
-    background-color: transparent;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 767.98px) {
   .ig__list {
-    background-color: transparent;
+    flex-direction: column-reverse;
   }
 }
 .ig__item {
@@ -727,19 +727,11 @@ input[type=checkbox]:checked + label::after {
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .ig__item--wrap {
     padding: 40px 32px 40px 32px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
   }
 }
 @media screen and (max-width: 767.98px) {
   .ig__item--wrap {
     padding: 40px 20px 40px 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
   }
 }
 .ig__info {
@@ -758,6 +750,10 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .ig__img {
+  width: 100%;
+  height: 100%;
+}
+.ig__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -790,7 +786,7 @@ input[type=checkbox]:checked + label::after {
 
 .innovation {
   padding: 72px 144px;
-  background-color: var(--light-primary);
+  background-color: #ffffff;
   display: flex;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
@@ -887,6 +883,22 @@ input[type=checkbox]:checked + label::after {
 }
 .innovation__btn .desc:hover {
   color: var(--middle-primary);
+}
+
+.balance {
+  padding: 72px 144px;
+  background-color: var(--light-primary);
+  display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .balance {
+    padding: 40px 32px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .balance {
+    padding: 40px 20px;
+  }
 }
 
 .news {

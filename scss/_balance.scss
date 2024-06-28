@@ -1,0 +1,11 @@
+.balance {
+    padding: 72px 144px;
+    background-color: var(--light-primary);
+    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        padding: 40px 32px;
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 20px;
+    }
+}
