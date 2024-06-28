@@ -11,6 +11,10 @@
     &__row {
         align-items: center;
         gap: 18px;
+        & .title {
+            min-width: 450px;
+            max-width: 450px;
+        }
         & .desc {
             margin-top: 10px;
         }
@@ -26,6 +30,10 @@
             gap: 9px;
             & .desc {
                 margin-top: 0;
+            }
+            & .title {
+                min-width: auto;
+                max-width: auto;
             }
         }
     }
@@ -76,8 +84,8 @@
         padding: 50px 0;
         & .title {
             width: 100%;
-            min-width: 220px;
-            max-width: 300px;
+            min-width: 415px;
+            max-width: 415px;
         }
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
             gap: 18px;
@@ -91,6 +99,10 @@
             flex-wrap: wrap;
             gap: 9px;
             padding: 20px 0;
+            & .title {
+                min-width: auto;
+                max-width: auto;
+            }
         }
     }
 }
