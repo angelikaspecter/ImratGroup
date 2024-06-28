@@ -785,7 +785,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 .innovation {
-  padding: 72px 144px;
+  padding: 100px 144px;
   background-color: #ffffff;
   display: flex;
 }
@@ -894,7 +894,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 .balance {
-  padding: 72px 144px;
+  padding: 100px 144px;
   background-color: var(--light-primary);
   display: flex;
 }
@@ -910,7 +910,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 .news {
-  padding: 72px 144px 150px;
+  padding: 100px 144px 150px;
   background-color: var(--light-primary);
   display: flex;
   flex-direction: column;
@@ -1011,28 +1011,12 @@ input[type=checkbox]:checked + label::after {
 .news__img {
   width: 100%;
   height: 100%;
+}
+.news__img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .news__img--large {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .news__img--large {
-    height: 226px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .news__img--small {
-    height: 226px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .news__img--small {
-    height: 226px;
-  }
 }
 .news__info {
   display: flex;
