@@ -222,10 +222,14 @@
         <section class="innovation">
             <ul class="innovation__list">
                 <li class="innovation__item">
-                    <img loading="lazy" src="img/img_5.webp" width="533" height="596" alt="ImratGroup - innovations"
-                        class="innovation__img">
+                        <picture class="innovation__img">
+                            <source media="(max-width: 767.98px)" srcset="img/img_5-mobile.webp" width="375" height="178" alt="ImratGroup - innovations">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/img_5-tablet.webp" width="768" height="280" alt="ImratGroup - innovations">
+                            <source media="(min-width:1440px)" srcset="img/img_5-desktop.webp" width="533" height="596" alt="ImratGroup - innovations">
+                            <img src="img/img_5-desktop.webp" width="533" height="596" alt="ImratGroup - innovations" />
+                        </picture>
                 </li>
-                <li class="innovation__item">
+                <li class="innovation__item innovation__item--wrap">
                     <div class="innovation__info">
                         <h2 class="title title--section title--color">ImratGroup - innovations</h2>
                         <p class="desc desc--large desc--middle">Our main areas of investment in start-ups are green

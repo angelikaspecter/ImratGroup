@@ -791,12 +791,12 @@ input[type=checkbox]:checked + label::after {
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .innovation {
-    padding: 40px 32px;
+    padding: 0;
   }
 }
 @media screen and (max-width: 767.98px) {
   .innovation {
-    padding: 40px 20px;
+    padding: 0;
   }
 }
 .innovation__list {
@@ -809,13 +809,13 @@ input[type=checkbox]:checked + label::after {
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .innovation__list {
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
   }
 }
 @media screen and (max-width: 767.98px) {
   .innovation__list {
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
   }
 }
 .innovation__item {
@@ -833,6 +833,20 @@ input[type=checkbox]:checked + label::after {
 @media screen and (max-width: 767.98px) {
   .innovation__item {
     gap: 24px;
+  }
+}
+.innovation__item--wrap {
+  height: 100%;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__item--wrap {
+    padding: 40px 32px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__item--wrap {
+    padding: 40px 20px;
   }
 }
 .innovation__info {
@@ -855,19 +869,13 @@ input[type=checkbox]:checked + label::after {
 }
 .innovation__img {
   width: 100%;
-  height: 596px;
+  height: 100%;
+}
+.innovation__img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .innovation__img {
-    height: 280px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .innovation__img {
-    height: 178px;
-  }
 }
 .innovation__btn {
   max-width: 85px;
@@ -875,14 +883,14 @@ input[type=checkbox]:checked + label::after {
   padding: 12px 0;
   text-align: center;
   text-decoration: none;
-  border-bottom: 1px solid var(--accident-color);
   cursor: pointer;
 }
-.innovation__btn:hover {
-  border-bottom: 1px solid var(--middle-primary);
+.innovation__btn .desc {
+  border-bottom: 1px solid var(--accident-color);
 }
 .innovation__btn .desc:hover {
   color: var(--middle-primary);
+  border-bottom: 1px solid var(--middle-primary);
 }
 
 .balance {
