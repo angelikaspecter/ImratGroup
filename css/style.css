@@ -789,6 +789,107 @@ input[type=checkbox]:checked + label::after {
   }
 }
 
+.innovation {
+  padding: 72px 144px;
+  background-color: var(--light-primary);
+  display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation {
+    padding: 40px 32px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation {
+    padding: 40px 20px;
+  }
+}
+.innovation__list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__list {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__list {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.innovation__item {
+  width: 100%;
+  flex: 1 1 calc(50% - 60px);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__item {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__item {
+    gap: 24px;
+  }
+}
+.innovation__info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__info {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__info {
+    gap: 9px;
+  }
+}
+.innovation__info .title {
+  white-space: wrap;
+}
+.innovation__img {
+  width: 100%;
+  height: 596px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__img {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__img {
+    height: 178px;
+  }
+}
+.innovation__btn {
+  max-width: 85px;
+  font-weight: 600;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accident-color);
+  cursor: pointer;
+}
+.innovation__btn:hover {
+  border-bottom: 1px solid var(--middle-primary);
+}
+.innovation__btn .desc:hover {
+  color: var(--middle-primary);
+}
+
 .news {
   padding: 72px 144px 150px;
   background-color: var(--light-primary);
