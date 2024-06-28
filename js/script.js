@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const summaryWrap = document.getElementById('Summary');
     const infoWrap = document.getElementById('Info');
 
-    nextActive.addEventListener('click', function() {
+    nextActive.addEventListener('click', function () {
         nextActive.classList.add('hide');
         prevDisabled.classList.add('hide');
         nextDisabled.classList.remove('hide');
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
         progressBar.style.width = '100%';
     });
 
-    prevActive.addEventListener('click', function() {
+    prevActive.addEventListener('click', function () {
         nextActive.classList.remove('hide');
         prevDisabled.classList.remove('hide');
         nextDisabled.classList.add('hide');
@@ -147,5 +147,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 progressBar.style.height = height + '%';
             }
         }, 50);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll('.faq__item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq__item-question');
+        const answer = item.querySelector('.faq__item-answer');
+        const btnOpen = item.querySelector('.faq__btn--open');
+        const btnClose = item.querySelector('.faq__btn--close');
+
+        question.addEventListener('click', () => {
+            answer.classList.toggle('hide');
+            btnOpen.classList.toggle('hide');
+            btnClose.classList.toggle('hide');
+        });
     });
 });
