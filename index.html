@@ -250,15 +250,91 @@
         </section>
         <section class="balance">
             <ul class="balance__wrap">
-                <li class="balance__item">
-
+                <li class="balance__item" id="Summary">
+                    <ul class="balance__summary">
+                        <li class="balance__summary-item balance__summary-item--info">
+                            <div class="balance__summary-top">
+                                <p class="desc desc--normal desc--dark"><div class="pin pin--dark"></div> Principal amount</p>
+                                <p class="desc desc--normal desc--dark"><div class="pin pin--light"></div> Interest earned</p>
+                            </div>
+                            <div class="balance__summary-progress">
+                                <div class="progress progress__container">
+                                    <div class="progress__bar" id="progressBar1"></div>
+                                    <div class="progress__label desc desc--smaller desc--middle">Jan</div>
+                                </div>
+                                <div class="progress progress__container">
+                                    <div class="progress__bar" id="progressBar2"></div>
+                                    <div class="progress__label desc desc--smaller desc--middle">Mar</div>
+                                </div>
+                                <div class="progress progress__container">
+                                    <div class="progress__bar" id="progressBar3"></div>
+                                    <div class="progress__label desc desc--smaller desc--middle">May</div>
+                                </div>
+                                <div class="progress progress__container">
+                                    <div class="progress__bar" id="progressBar4"></div>
+                                    <div class="progress__label desc desc--smaller desc--middle">Jul</div>
+                                </div>
+                                <div class="progress progress__container">
+                                    <div class="progress__bar" id="progressBar5"></div>
+                                    <div class="progress__label desc desc--smaller desc--middle">Sep</div>
+                                </div>
+                                <div class="progress progress__container">
+                                    <div class="progress__bar" id="progressBar6"></div>
+                                    <div class="progress__label desc desc--smaller desc--middle">Nov</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="balance__summary-item balance__summary-item--desc">
+                            <div class="balance__summary-wrap">
+                                <p class="desc desc--larger desc--dark">Balance in a year</p>
+                                <p class="title title--wrap title--color">$97,013</p>
+                            </div>
+                            <hr>
+                            <div class="balance__summary-wrap">
+                                <p class="desc desc--larger desc--dark">Investment</p>
+                                <p class="title title--wrap title--color">$24,000</p>
+                                <p class="title title--wrap title--color">18% Interest rate</p>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
-                <li class="balance__item">
-
+                <li class="balance__item hide" id="Info">
+                    <ul class="balance__info">
+                        <li class="balance__info-item balance__info-item--info">
+                            <img src="img/img_6.svg" width="706" height="306" alt="" class="balance__info-img">
+                        </li>
+                        <li class="balance__info-item balance__info-item--desc">
+                            <div class="balance__info-wrap">
+                                <p class="desc desc--larger desc--dark">IG Index</p>
+                                <p class="title title--wrap title--color">$5,000</p>
+                                <p class="title title--wrap title--color">18% interest rate</p>
+                            </div>
+                            <hr>
+                            <div class="balance__info-wrap">
+                                <p class="desc desc--larger desc--dark">IG Future</p>
+                                <p class="title title--wrap title--color">$5,000</p>
+                                <p class="title title--wrap title--color">60% interest rate</p>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <div class="balance__nav">
-
+                <div class="balance__nav--prev">
+                    <img src="img/arrow.svg" width="28" height="28" alt="prev"
+                        class="balance__nav-icon balance__nav-icon--prev" id="PrevDisabled">
+                    <img src="img/arrow-dark.svg" width="28" height="28" alt="prev"
+                        class="balance__nav-icon balance__nav-icon--prev hide" id="PrevActive">
+                </div>
+                <div class="balance__progress">
+                    <div class="balance__progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="balance__nav--next">
+                    <img src="img/arrow.svg" width="28" height="28" alt="next"
+                        class="balance__nav-icon balance__nav-icon--next hide" id="NextDisabled">
+                    <img src="img/arrow-dark.svg" width="28" height="28" alt="next"
+                        class="balance__nav-icon balance__nav-icon--next" id="NextActive">
+                </div>
             </div>
         </section>
         <section class="news">
@@ -270,15 +346,16 @@
             <ul class="news__list">
                 <li class="news__item news__item--large">
                     <a href="" class="news__link">
-                            <picture class="news__img">
-                                <source media="(max-width: 767.98px)" srcset="img/post_1-mobile.webp" width="343" height="202"
-                                    alt="Blockchain Innovations Boost Earnings">
-                                <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post_1-tablet.webp"
-                                    width="220" height="202" alt="Blockchain Innovations Boost Earnings">
-                                <source media="(min-width:1440px)" srcset="img/post_1-desktop.webp" width="360" height="433"
-                                    alt="Blockchain Innovations Boost Earnings">
-                                <img src="img/post_1-desktop.webp" width="360" height="433" alt="Blockchain Innovations Boost Earnings" />
-                            </picture>
+                        <picture class="news__img">
+                            <source media="(max-width: 767.98px)" srcset="img/post_1-mobile.webp" width="343"
+                                height="202" alt="Blockchain Innovations Boost Earnings">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post_1-tablet.webp"
+                                width="220" height="202" alt="Blockchain Innovations Boost Earnings">
+                            <source media="(min-width:1440px)" srcset="img/post_1-desktop.webp" width="360" height="433"
+                                alt="Blockchain Innovations Boost Earnings">
+                            <img src="img/post_1-desktop.webp" width="360" height="433"
+                                alt="Blockchain Innovations Boost Earnings" />
+                        </picture>
                         <div class="news__info">
                             <div class="title__wrap">
                                 <p class="title title--pretitle title--middle">Blockchain</p>
@@ -294,13 +371,14 @@
                 <li class="news__item news__item--small">
                     <a href="" class="news__link">
                         <picture class="news__img">
-                            <source media="(max-width: 767.98px)" srcset="img/post_2-mobile.webp" width="343" height="226"
-                                alt="Crypto Solutions Ensure Stability">
+                            <source media="(max-width: 767.98px)" srcset="img/post_2-mobile.webp" width="343"
+                                height="226" alt="Crypto Solutions Ensure Stability">
                             <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post_2-tablet.webp"
                                 width="220" height="226" alt="Crypto Solutions Ensure Stability">
                             <source media="(min-width:1440px)" srcset="img/post_2-desktop.webp" width="360" height="270"
                                 alt="Crypto Solutions Ensure Stability">
-                            <img src="img/post_2-desktop.webp" width="360" height="270" alt="Crypto Solutions Ensure Stability" />
+                            <img src="img/post_2-desktop.webp" width="360" height="270"
+                                alt="Crypto Solutions Ensure Stability" />
                         </picture>
                         <div class="news__info">
                             <div class="title__wrap">
@@ -316,13 +394,14 @@
                 <li class="news__item news__item--large">
                     <a href="" class="news__link">
                         <picture class="news__img">
-                            <source media="(max-width: 767.98px)" srcset="img/post_3-mobile.webp" width="343" height="241"
-                                alt="Expert Team Drives Profitability">
+                            <source media="(max-width: 767.98px)" srcset="img/post_3-mobile.webp" width="343"
+                                height="241" alt="Expert Team Drives Profitability">
                             <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post_3-tablet.webp"
                                 width="220" height="241" alt="Expert Team Drives Profitability">
                             <source media="(min-width:1440px)" srcset="img/post_3-desktop.webp" width="360" height="433"
                                 alt="Expert Team Drives Profitability">
-                            <img src="img/post_3-desktop.webp" width="360" height="433" alt="Expert Team Drives Profitability" />
+                            <img src="img/post_3-desktop.webp" width="360" height="433"
+                                alt="Expert Team Drives Profitability" />
                         </picture>
                         <div class="news__info">
                             <div class="title__wrap">

@@ -97,4 +97,55 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation();
         });
     });
+
+    const nextActive = document.getElementById('NextActive');
+    const nextDisabled = document.getElementById('NextDisabled');
+    const prevActive = document.getElementById('PrevActive');
+    const prevDisabled = document.getElementById('PrevDisabled');
+    const progressBar = document.getElementById('progress-bar');
+    const summaryWrap = document.getElementById('Summary');
+    const infoWrap = document.getElementById('Info');
+
+    nextActive.addEventListener('click', function() {
+        nextActive.classList.add('hide');
+        prevDisabled.classList.add('hide');
+        nextDisabled.classList.remove('hide');
+        prevActive.classList.remove('hide');
+        summaryWrap.classList.add('hide');
+        infoWrap.classList.remove('hide');
+        progressBar.style.width = '100%';
+    });
+
+    prevActive.addEventListener('click', function() {
+        nextActive.classList.remove('hide');
+        prevDisabled.classList.remove('hide');
+        nextDisabled.classList.add('hide');
+        prevActive.classList.add('hide');
+        summaryWrap.classList.remove('hide');
+        infoWrap.classList.add('hide');
+        progressBar.style.width = '50%';
+    });
+
+    const progressBars = [
+        { id: 'progressBar1', targetHeight: 100 },
+        { id: 'progressBar2', targetHeight: 60 },
+        { id: 'progressBar3', targetHeight: 70 },
+        { id: 'progressBar4', targetHeight: 60 },
+        { id: 'progressBar5', targetHeight: 55 },
+        { id: 'progressBar6', targetHeight: 50 }
+    ];
+
+    progressBars.forEach(bar => {
+        const progressBar = document.getElementById(bar.id);
+        let height = 0;
+
+        const interval = setInterval(() => {
+            if (height >= bar.targetHeight) {
+                clearInterval(interval);
+            } else {
+                height++;
+                progressBar.style.height = height + '%';
+            }
+        }, 50);
+    });
 });
