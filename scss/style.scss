@@ -21,6 +21,7 @@
 @import "_privacy";
 @import "_faq";
 @import "_career";
+@import "_registration";
 @import "_contact";
 @import "_error";
 @import "_footer";
@@ -239,6 +240,32 @@
         transition: all .5s ease-in-out;
         &:hover {
             transform: scale(1.05);
+            transition: all .5s ease-in-out;
+        }
+        &:focus,
+        &:active {
+            background-color: rgba(9, 102, 253, 0.05);
+        }
+        &:disabled {
+            color: rgba(129, 153, 151, 1);
+            background-color: rgba(213, 221, 220, 1);
+        }
+    }
+    &--google {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px 32px;
+        border-radius: 2px;
+        font-weight: 600;
+        background-color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(233, 233, 233, 1);
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        &:hover {
             transition: all .5s ease-in-out;
         }
         &:focus,

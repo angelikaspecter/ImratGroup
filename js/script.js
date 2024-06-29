@@ -166,3 +166,46 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const customSelect = document.querySelector(".custom-select");
+    const trigger = customSelect.querySelector(".custom-select-trigger");
+    const options = customSelect.querySelectorAll(".custom-option");
+
+    trigger.addEventListener("click", function() {
+        customSelect.classList.toggle("open");
+    });
+
+    options.forEach(option => {
+        option.addEventListener("click", function() {
+            const selectedOption = customSelect.querySelector(".custom-option.selected");
+            if (selectedOption) {
+                selectedOption.classList.remove("selected");
+            }
+            option.classList.add("selected");
+            trigger.textContent = option.textContent;
+            customSelect.classList.remove("open");
+        });
+    });
+
+    document.addEventListener("click", function(e) {
+        if (!customSelect.contains(e.target)) {
+            customSelect.classList.remove("open");
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tooltipTarget = document.querySelector('.tooltip__target');
+    const tooltipContent = document.querySelector('.tooltip__content');
+
+    tooltipTarget.addEventListener('mouseenter', () => {
+        tooltipContent.style.visibility = 'visible';
+        tooltipContent.style.opacity = '1';
+    });
+
+    tooltipTarget.addEventListener('mouseleave', () => {
+        tooltipContent.style.visibility = 'hidden';
+        tooltipContent.style.opacity = '0';
+    });
+});

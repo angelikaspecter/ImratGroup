@@ -63,14 +63,16 @@
                             class="header__nav-icon header__nav-icon--mobile"></p>
                     <ul class="header__nav-dropdown header__nav-dropdown--mobile hide">
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
-                            <a href="about.html" class="header__nav-dropdown-link header__nav-dropdown-link--mobile">About Us</a>
+                            <a href="about.html"
+                                class="header__nav-dropdown-link header__nav-dropdown-link--mobile">About Us</a>
                         </li>
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
                             <a href="directions.html"
                                 class="header__nav-dropdown-link header__nav-dropdown-link--mobile">Directions</a>
                         </li>
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
-                            <a href="career.html" class="header__nav-dropdown-link header__nav-dropdown-link--mobile">Career</a>
+                            <a href="career.html"
+                                class="header__nav-dropdown-link header__nav-dropdown-link--mobile">Career</a>
                         </li>
                     </ul>
                 </li>
@@ -81,10 +83,12 @@
                             class="header__nav-icon header__nav-icon--mobile"></p>
                     <ul class="header__nav-dropdown header__nav-dropdown--mobile hide">
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
-                            <a href="ig-index.html" class="header__nav-dropdown-link header__nav-dropdown-link--mobile">IG Index</a>
+                            <a href="ig-index.html"
+                                class="header__nav-dropdown-link header__nav-dropdown-link--mobile">IG Index</a>
                         </li>
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
-                            <a href="ig-future.html" class="header__nav-dropdown-link header__nav-dropdown-link--mobile">IG Future</a>
+                            <a href="ig-future.html"
+                                class="header__nav-dropdown-link header__nav-dropdown-link--mobile">IG Future</a>
                         </li>
                     </ul>
                 </li>
@@ -95,7 +99,8 @@
                             class="header__nav-icon header__nav-icon--mobile"></p>
                     <ul class="header__nav-dropdown header__nav-dropdown--mobile hide">
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
-                            <a href="faq.html" class="header__nav-dropdown-link header__nav-dropdown-link--mobile">FAQ</a>
+                            <a href="faq.html"
+                                class="header__nav-dropdown-link header__nav-dropdown-link--mobile">FAQ</a>
                         </li>
                         <li class="header__nav-dropdown-item header__nav-dropdown-item--mobile">
                             <a href="privacy.html"
@@ -170,7 +175,165 @@
                 class="header__mobile-nav-icon header__mobile-nav-icon--close hide"></button>
     </header>
     <main>
-
+        <section class="registration">
+            <header class="registration__header">
+                <h1 class="title title--section title--dark">Registration</h1>
+            </header>
+            <div class="registration__content">
+                <ul class="registration__wrapper">
+                    <li class="registration__wrap registration__wrap--large">
+                        <button class="btn btn--google"><img src="img/google-icon.svg" width="24" height="24"
+                                alt="Continue with Google" class="btn__icon"> <span
+                                class="desc desc--small desc--dark">Continue with Google</span> </button>
+                        <div class="registration__delimiter">
+                            <hr> <span class="desc desc--smaller desc--middle">or</span>
+                            <hr>
+                        </div>
+                        <form action="" class="registration__form form form--transparent">
+                            <div class="registration__form--login">
+                                <div class="form__wrap form__wrap--double">
+                                    <div class="form__wrap">
+                                        <label for="login" class="form__label"><span
+                                                class="desc desc--small desc--dark">Login</span></label>
+                                        <input class="form__input" type="text" name="login" id="login"
+                                            placeholder="Enter your login">
+                                    </div>
+                                    <div class="form__wrap">
+                                        <label for="email" class="form__label"><span
+                                                class="desc desc--small desc--dark">E-mail</span></label>
+                                        <input class="form__input" type="email" name="email" id="email"
+                                            placeholder="Enter your email address">
+                                    </div>
+                                </div>
+                                <div class="form__wrap form__wrap--double">
+                                    <div class="form__wrap">
+                                        <label for="password" class="form__label"><span
+                                                class="desc desc--small desc--dark">Password</span></label>
+                                        <input class="form__input" type="password" name="password" id="password"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="form__wrap">
+                                        <label for="confirm-password" class="form__label"><span
+                                                class="desc desc--small desc--dark">Confirm Password</span></label>
+                                        <input class="form__input" type="password" name="confirm-password"
+                                            id="confirmPassword" placeholder="Confirm your password">
+                                    </div>
+                                </div>
+                                <div class="form__wrap form__wrap--double">
+                                    <div class="form__wrap form__wrap--single">
+                                        <label for="phone" class="form__label"><span
+                                                class="desc desc--small desc--dark">Phone number</span></label>
+                                        <input class="form__input" type="tel" name="phone" id="phone"
+                                            placeholder="Enter your phone number">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="registration__form--key">
+                                <h2 class="title title--larger title--dark">Choose a key question</h2>
+                                <div class="form__wrap">
+                                    <label for="question" class="form__label">
+                                        <span class="desc desc--small desc--dark">Key question
+                                            <div class="tooltip">
+                                                <img class="tooltip__target" src="img/info.svg" width="15" height="15"
+                                                    alt="tooltip">
+                                                <div class="tooltip__content desc desc--smaller desc--light">The key
+                                                    question is created to ensure the security of your profile. It helps
+                                                    prevent fraudulent activities.</div>
+                                            </div>
+                                        </span>
+                                    </label>
+                                    <div class="custom-select-wrapper">
+                                        <div class="custom-select">
+                                            <div class="custom-select-trigger desc desc--normal desc--dark">City of
+                                                birth</div>
+                                            <div class="custom-options">
+                                                <span class="custom-option desc desc--normal desc--dark selected"
+                                                    data-value="1">City of birth</span>
+                                                <span class="custom-option desc desc--normal desc--dark"
+                                                    data-value="2">Your child's name</span>
+                                                <span class="custom-option desc desc--normal desc--dark"
+                                                    data-value="3">Mother's maiden name</span>
+                                                <span class="custom-option desc desc--normal desc--dark"
+                                                    data-value="4">First pet's name</span>
+                                                <span class="custom-option desc desc--normal desc--dark"
+                                                    data-value="5">School you attended</span>
+                                                <span class="custom-option desc desc--normal desc--dark"
+                                                    data-value="6">Favorite restaurant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__wrap">
+                                    <label for="answer" class="form__label"><span
+                                            class="desc desc--small desc--dark">Answer</span></label>
+                                    <input class="form__input" type="tel" name="answer" id="answer"
+                                        placeholder="Enter the answer to the key question">
+                                </div>
+                                <p class="desc desc--small desc--dark"><img src="img/report.svg" width="18" height="18"
+                                        alt="report" class="registration__form--icon"> The key word cannot be recovered;
+                                    it is synchronized with our automatic decentralized system.</p>
+                            </div>
+                            <hr>
+                            <div class="registration__form--goal">
+                                <h2 class="title title--larger title--dark">Select your primary investment goal</h2>
+                                <ul class="registration__list--goal">
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Creating a pension savings</span>
+                                    </li>
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Capital diversification</span></li>
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Inflation protection</span></li>
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Creating an additional source of
+                                            income</span></li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="registration__form--investor">
+                                <h2 class="title title--larger title--dark">Type of investor</h2>
+                                <ul class="registration__list--goal">
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Individual investor</span></li>
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Collective investor</span></li>
+                                    <li class="registration__item--goal"><span
+                                            class="desc desc--normal desc--middle">Professional investor</span></li>
+                                </ul>
+                            </div>
+                            <div class="registration__recaptcha">
+                                <input type="checkbox" name="recaptcha" id="recaptcha"> <label for="recaptcha"
+                                    class="desc desc--small desc--middle">I’m not a robot</label>
+                                <img src="img/recaptcha.svg" width="45" height="44" alt="recaptcha"
+                                    class="registration__recaptcha--img">
+                            </div>
+                            <button class="btn btn--form desc desc--small desc--light" type="submit">Submit</button>
+                        </form>
+                    </li>
+                    <li class="registration__wrap registration__wrap--small">
+                        <ul class="registration__list">
+                            <li class="registration__item">
+                                <p class="desc desc--large desc--dark">For general inquiries, please email us at:</p>
+                                <a class="desc desc--normal desc--color"
+                                    href="mailto:ImratGroupsupport@gmail.com">ImratGroupsupport@gmail.com</a>
+                            </li>
+                            <li class="registration__item">
+                                <p class="desc desc--large desc--dark">For partnership inquiries,
+                                    please contact:</p>
+                                <a class="desc desc--normal desc--color"
+                                    href="mailto:ImratGroupPartners@gmail.com">ImratGroupPartners@gmail.com</a>
+                            </li>
+                            <li class="registration__item">
+                                <p class="desc desc--large desc--dark">For project funding requests, please contact:</p>
+                                <a class="desc desc--normal desc--color"
+                                    href="mailto:ImratGroupStartUp@gmail.com">ImratGroupStartUp@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__top">
@@ -218,7 +381,8 @@
                             <a href="about.html" class="desc desc--normal desc--light footer__nav-link">About Us</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="directions.html" class="desc desc--normal desc--light footer__nav-link">Imrat Group Directions</a>
+                            <a href="directions.html" class="desc desc--normal desc--light footer__nav-link">Imrat Group
+                                Directions</a>
                         </li>
                         <li class="footer__nav-item">
                             <a href="career.html" class="desc desc--normal desc--light footer__nav-link">Career</a>
@@ -234,7 +398,8 @@
                             <a href="ig-index.html" class="desc desc--normal desc--light footer__nav-link">IG Index</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="ig-future.html" class="desc desc--normal desc--light footer__nav-link">IG Future</a>
+                            <a href="ig-future.html" class="desc desc--normal desc--light footer__nav-link">IG
+                                Future</a>
                         </li>
                     </ul>
                 </li>
