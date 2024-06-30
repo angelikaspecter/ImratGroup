@@ -1,0 +1,270 @@
+.hero-about {
+    padding: 72px 144px;
+    background-color: var(--light-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        padding: 40px 32px;
+        gap: 32px;
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 20px;
+        gap: 32px;
+    }
+    & .title {
+        white-space: wrap;
+        position: relative;
+    }
+    &__icon {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        position: absolute;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: 42px;
+            height: 42px;
+        }
+        @media screen and (max-width: 767.98px) {
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &__wrap {
+        width: 100%;
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-left: auto;
+        @media screen and (max-width: 767.98px) {
+            max-width: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.about-us {
+    padding: 72px 450px;
+    background-color: var(--accident-color-opacity);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        padding: 40px 32px;
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 20px;
+    }
+    & .title {
+        font-weight: 500;
+    }
+    & .desc {
+        &--smaller {
+            text-transform: uppercase;
+        }
+    }
+    & .btn {
+        max-width: 200px;
+        padding: 12px 60px;
+        border-radius: 0;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+    &__img {
+        position: absolute;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            display: none;
+        }
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+        &--left {
+            left: 8vw;
+            bottom: 6vw;
+        }
+        &--right {
+            right: 8vw;
+            bottom: 4vw;
+        }
+    }
+}
+
+.values {
+    padding: 72px 144px;
+    background-color: var(--light-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        padding: 40px 32px;
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 20px;
+    }
+    &__list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    &__item {
+        width: 100%;
+        flex: 1 1 calc(50% - 24px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+        padding: 32px;
+        background-color: var(--accident-color-opacity);
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            flex: 1 1 calc(50% - 24px);
+        }
+        @media screen and (max-width: 767.98px) {
+            flex: 1 1 calc(100% - 24px);
+        }
+    }
+    &__icon {
+        width: 64px;
+        height: 64px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: 64px;
+            height: 64px;
+        }
+        @media screen and (max-width: 767.98px) {
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.advant {
+    padding: 72px 144px;
+    background-color: #fff;
+    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        padding: 40px 32px;
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 20px;
+    }
+    &__list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            flex-direction: column;
+            gap: 32px;
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+    &__item {
+        width: 100%;
+        flex: 1 1 calc(50% - 50px);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.conv {
+    padding: 72px 144px;
+    background-color: var(--light-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        padding: 40px 32px;
+    }
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 20px;
+    }
+    & .title {
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            display: none;
+        }
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+    }
+    &__list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            flex-direction: column-reverse;
+            gap: 32px;
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column-reverse;
+            gap: 32px;
+        }
+    }
+    &__item {
+        width: 100%;
+        flex: 1 1 calc(50% - 50px);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        & .title {
+            &.hide {
+                display: none;
+                @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                    display: flex;
+                    white-space: wrap;
+                }
+                @media screen and (max-width: 767.98px) {
+                    display: flex;
+                    white-space: wrap;
+                }
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
