@@ -18,6 +18,7 @@
 @import "_ig";
 @import "_ig-index";
 @import "_innovation";
+@import "_directions";
 @import "_balance";
 @import "_news";
 @import "_privacy";
@@ -43,15 +44,14 @@
         gap: 8px;
     }
     &--section {
-        font-size: 56px;
+        font-size: 48px;
         font-weight: 400;
         color: var(--accident-color);
-        white-space: nowrap;
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-            font-size: 32px;
+            font-size: 40px;
         }
         @media screen and (max-width: 767.98px) {
-            font-size: 24px;
+            font-size: 32px;
         }
     }
     &--wrap {
