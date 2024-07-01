@@ -161,6 +161,12 @@
             object-fit: contain;
         }
     }
+    & hr {
+        width: 100%;
+        height: 1px;
+        background-color: var(--accident-color-opacity);
+        border: none;
+    }
 }
 
 .directions-hero {

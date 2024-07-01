@@ -27,6 +27,7 @@
         }
     }
     &__nav-icon {
+        cursor: pointer;
         &--prev {
             transform: rotate(90deg);
             &.hide {
