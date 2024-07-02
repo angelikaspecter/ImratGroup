@@ -181,9 +181,11 @@
         padding: 24px;
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
             padding: 24px 0;
+            height: 220px;
         }
         @media screen and (max-width: 767.98px) {
             padding: 24px 0;
+            height: 200px;
         }
     }
     &__info {
@@ -320,11 +322,11 @@
         }
         &:nth-child(4) {
             height: 80%;
-            height: 100%;
+            // height: 100%;
         }
         &:nth-child(5) {
             height: 88%;
-            height: 100%;
+            // height: 100%;
         }
         &:nth-child(6) {
             height: 100%;
@@ -332,47 +334,47 @@
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
             width: 7vw;
             &:nth-child(1) {
-                height: 70px;
+                height: 20%;
             }
             &:nth-child(2) {
-                height: 100px;
+                height: 65%;
             }
             &:nth-child(3) {
-                height: 130px;
+                height: 72%;
             }
             &:nth-child(4) {
-                height: 160px;
-                height: 220px;
+                height: 80%;
+                // height: 100%;
             }
             &:nth-child(5) {
-                height: 190px;
-                height: 220px;
+                height: 88%;
+                // height: 100%;
             }
             &:nth-child(6) {
-                height: 220px;
+                height: 100%;
             }
         }
         @media screen and (max-width: 767.98px) {
             width: 9vw;
             &:nth-child(1) {
-                height: 30px;
+                height: 20%;
             }
             &:nth-child(2) {
-                height: 80px;
+                height: 65%;
             }
             &:nth-child(3) {
-                height: 110px;
+                height: 72%;
             }
             &:nth-child(4) {
-                height: 140px;
-                height: 200px;
+                height: 80%;
+                // height: 100%;
             }
             &:nth-child(5) {
-                height: 170px;
-                height: 200px;
+                height: 88%;
+                // height: 100%;
             }
             &:nth-child(6) {
-                height: 200px;
+                height: 100%;
             }
         }
     }

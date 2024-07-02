@@ -128,11 +128,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const progressBars = [
         { id: 'progressBar1', targetHeight: 100 },
-        { id: 'progressBar2', targetHeight: 60 },
-        { id: 'progressBar3', targetHeight: 55 },
-        { id: 'progressBar4', targetHeight: 60 },
-        { id: 'progressBar5', targetHeight: 60 },
-        { id: 'progressBar6', targetHeight: 60 }
+        { id: 'progressBar2', targetHeight: 50 },
+        { id: 'progressBar3', targetHeight: 45 },
+        { id: 'progressBar4', targetHeight: 40 },
+        { id: 'progressBar5', targetHeight: 37 },
+        { id: 'progressBar6', targetHeight: 33 }
     ];
 
     progressBars.forEach(bar => {
