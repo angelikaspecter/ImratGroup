@@ -12,6 +12,13 @@
     @media screen and (max-width: 767.98px) {
         padding: 60px 20px 18px;
     }
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
     &__logo {
         width: 161px;
         height: 42px;

@@ -202,6 +202,13 @@ input[type=checkbox]:checked + label::after {
     padding: 60px 20px 18px;
   }
 }
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 .header__logo {
   width: 161px;
   height: 42px;

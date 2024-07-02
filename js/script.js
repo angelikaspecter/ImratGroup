@@ -150,6 +150,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+let lastScrollTop = 0;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop < lastScrollTop) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+    lastScrollTop = scrollTop;
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const faqItems = document.querySelectorAll('.faq__item');
 
@@ -167,17 +181,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const customSelect = document.querySelector(".custom-select");
     const trigger = customSelect.querySelector(".custom-select-trigger");
     const options = customSelect.querySelectorAll(".custom-option");
 
-    trigger.addEventListener("click", function() {
+    trigger.addEventListener("click", function () {
         customSelect.classList.toggle("open");
     });
 
     options.forEach(option => {
-        option.addEventListener("click", function() {
+        option.addEventListener("click", function () {
             const selectedOption = customSelect.querySelector(".custom-option.selected");
             if (selectedOption) {
                 selectedOption.classList.remove("selected");
@@ -188,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    document.addEventListener("click", function(e) {
+    document.addEventListener("click", function (e) {
         if (!customSelect.contains(e.target)) {
             customSelect.classList.remove("open");
         }
