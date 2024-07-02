@@ -191,6 +191,8 @@ input[type=checkbox]:checked + label::after {
   padding: 18px 144px;
   background-color: var(--light-primary);
   position: relative;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .header {
@@ -208,6 +210,10 @@ input[type=checkbox]:checked + label::after {
   left: 0;
   right: 0;
   z-index: 999;
+}
+.header.hidden {
+  top: -100px; /* Скройте заголовок выше области просмотра */
+  opacity: 0;
 }
 .header__logo {
   width: 161px;
@@ -232,7 +238,7 @@ input[type=checkbox]:checked + label::after {
 .header__nav {
   margin: 0 auto;
 }
-@media (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) and (orientation: landscape) {
   .header__nav--mobile {
     position: absolute;
     top: 120px;
@@ -292,7 +298,7 @@ input[type=checkbox]:checked + label::after {
   align-items: flex-start;
   gap: 12px;
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1439.98px) {
   .header__nav-list--mobile {
     flex-direction: column;
     gap: 0;
