@@ -153,6 +153,7 @@
         border: 1px solid var(--accident-color-opacity);
     }
     &__header {
+        min-height: 230px;
         padding: 24px;
         background-color: rgba(236, 242, 241, 1);
     }
