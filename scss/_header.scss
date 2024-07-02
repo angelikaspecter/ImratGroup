@@ -30,7 +30,24 @@
     &__nav {
         margin: 0 auto;
         &--mobile {
-            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            @media (orientation: landscape) {
+                position: absolute;
+                top: 120px;
+                right: 32px;
+                background-color: var(--light-primary);
+                z-index: 999;
+                width: 100%;
+                max-width: 250px;
+                height: calc(100vh - 120px);
+                padding: 18px 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &.hide {
+                    display: none;
+                }
+            }
+            @media (orientation: portrait) and (min-width: 768px) and (max-width: 1439.98px) {
                 position: absolute;
                 top: 120px;
                 right: 32px;
@@ -69,7 +86,15 @@
         align-items: flex-start;
         gap: 12px;
         &--mobile {
-            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            @media (orientation: landscape) {
+                flex-direction: column;
+                gap: 0;
+                min-height: 200px;
+                height: calc(100% - 120px);
+                overflow: hidden;
+                overflow-y: scroll;
+            }
+            @media (orientation: portrait) and (min-width: 768px) and (max-width: 1439.98px) {
                 flex-direction: column;
                 gap: 0;
                 min-height: 200px;
@@ -204,7 +229,11 @@
             @media screen and (min-width: 1440px) {
                 display: none;
             }
-            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            @media (orientation: landscape) {
+                flex-direction: row;
+                height: auto;
+            }
+            @media (orientation: portrait) and (min-width: 768px) and (max-width: 1439.98px) {
                 flex-direction: column;
                 gap: 24px;
                 height: auto;
@@ -237,6 +266,7 @@
     }
     &__btn-lang {
         position: relative;
+        cursor: pointer;
     }
     &__btn {
         &--main-lang {

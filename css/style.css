@@ -225,7 +225,26 @@ input[type=checkbox]:checked + label::after {
 .header__nav {
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media (orientation: landscape) {
+  .header__nav--mobile {
+    position: absolute;
+    top: 120px;
+    right: 32px;
+    background-color: var(--light-primary);
+    z-index: 999;
+    width: 100%;
+    max-width: 250px;
+    height: calc(100vh - 120px);
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__nav--mobile.hide {
+    display: none;
+  }
+}
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1439.98px) {
   .header__nav--mobile {
     position: absolute;
     top: 120px;
@@ -266,7 +285,17 @@ input[type=checkbox]:checked + label::after {
   align-items: flex-start;
   gap: 12px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media (orientation: landscape) {
+  .header__nav-list--mobile {
+    flex-direction: column;
+    gap: 0;
+    min-height: 200px;
+    height: calc(100% - 120px);
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1439.98px) {
   .header__nav-list--mobile {
     flex-direction: column;
     gap: 0;
@@ -405,7 +434,13 @@ input[type=checkbox]:checked + label::after {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media (orientation: landscape) {
+  .header__btns--mobile {
+    flex-direction: row;
+    height: auto;
+  }
+}
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1439.98px) {
   .header__btns--mobile {
     flex-direction: column;
     gap: 24px;
@@ -444,6 +479,7 @@ input[type=checkbox]:checked + label::after {
 }
 .header__btn-lang {
   position: relative;
+  cursor: pointer;
 }
 .header__btn--main-lang {
   display: flex;
