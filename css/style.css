@@ -2566,9 +2566,11 @@ input[type=checkbox]:checked + label::after {
 }
 .progress__container:nth-child(4) {
   height: 80%;
+  height: 100%;
 }
 .progress__container:nth-child(5) {
   height: 88%;
+  height: 100%;
 }
 .progress__container:nth-child(6) {
   height: 100%;
@@ -2588,9 +2590,11 @@ input[type=checkbox]:checked + label::after {
   }
   .progress__container:nth-child(4) {
     height: 160px;
+    height: 220px;
   }
   .progress__container:nth-child(5) {
     height: 190px;
+    height: 220px;
   }
   .progress__container:nth-child(6) {
     height: 220px;
@@ -2611,9 +2615,11 @@ input[type=checkbox]:checked + label::after {
   }
   .progress__container:nth-child(4) {
     height: 140px;
+    height: 200px;
   }
   .progress__container:nth-child(5) {
     height: 170px;
+    height: 200px;
   }
   .progress__container:nth-child(6) {
     height: 200px;
