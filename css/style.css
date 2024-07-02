@@ -1082,7 +1082,7 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .ig__item {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 .ig__item--wrap {
@@ -1118,14 +1118,38 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .ig__img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .ig__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .ig__img {
+    width: 100%;
+  }
+}
 .ig__img img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .ig__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .ig__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .ig__btn {
   max-width: 192px;
@@ -1878,8 +1902,7 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .directions-about__item {
-  width: 100%;
-  flex: 1 1 calc(50% - 50px);
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1892,14 +1915,38 @@ input[type=checkbox]:checked + label::after {
   background-color: #fff;
 }
 .directions-about__img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .directions-about__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .directions-about__img {
+    width: 100%;
+  }
+}
 .directions-about__img img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .directions-about__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .directions-about__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .directions-info__list {

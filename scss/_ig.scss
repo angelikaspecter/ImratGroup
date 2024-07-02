@@ -14,7 +14,7 @@
         }
     }
     &__item {
-        width: 100%;
+        width: auto;
         height: 100%;
         &--wrap {
             padding: 72px 100px 72px 144px;
@@ -42,12 +42,26 @@
         }
     }
     &__img {
-        width: 100%;
+        width: auto;
         height: 100%;
-        & img {
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
             width: 100%;
+        }
+        @media screen and (max-width: 767.98px) {
+            width: 100%;
+        }
+        & img {
+            width: auto;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                width: 100%;
+                object-fit: cover;
+            }
+            @media screen and (max-width: 767.98px) {
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
     &__btn {
