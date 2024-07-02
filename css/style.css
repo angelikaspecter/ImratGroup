@@ -3077,6 +3077,7 @@ input[type=checkbox]:checked + label::after {
   border: 1px solid var(--accident-color-opacity);
   color: var(--accident-color-opacity);
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .insight__nav-item:hover, .insight__nav-item.active {
   border: 1px solid var(--accident-color-opacity);

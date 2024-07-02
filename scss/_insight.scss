@@ -83,6 +83,7 @@
         border: 1px solid var(--accident-color-opacity);
         color: var(--accident-color-opacity);
         margin-bottom: 15px;
+        cursor: pointer;
         &:hover,
         &.active {
             border: 1px solid var(--accident-color-opacity);
