@@ -6,8 +6,6 @@
     padding: 18px 144px;
     background-color: var(--light-primary);
     position: relative;
-    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 1;
     @media screen and (min-width: 768px) and (max-width: 1439.98px) {
         padding: 60px 32px 18px;
     }
@@ -21,10 +19,6 @@
         right: 0;
         z-index: 999;
     }
-    &.hidden {
-        top: -100px; /* Скройте заголовок выше области просмотра */
-        opacity: 0;
-      }
     &__logo {
         width: 161px;
         height: 42px;

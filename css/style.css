@@ -191,8 +191,6 @@ input[type=checkbox]:checked + label::after {
   padding: 18px 144px;
   background-color: var(--light-primary);
   position: relative;
-  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .header {
@@ -210,10 +208,6 @@ input[type=checkbox]:checked + label::after {
   left: 0;
   right: 0;
   z-index: 999;
-}
-.header.hidden {
-  top: -100px; /* Скройте заголовок выше области просмотра */
-  opacity: 0;
 }
 .header__logo {
   width: 161px;
@@ -3118,6 +3112,8 @@ input[type=checkbox]:checked + label::after {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
+  z-index: 55;
 }
 .cta__wrap .btn {
   text-decoration: none;

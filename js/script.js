@@ -158,9 +158,8 @@ window.addEventListener('scroll', function () {
 
     if (scrollTop < lastScrollTop) {
         header.classList.add('fixed');
-        header.classList.remove('hidden');
     } else {
-        header.classList.add('hidden');
+        header.classList.remove('fixed');
     }
     lastScrollTop = scrollTop;
 });
