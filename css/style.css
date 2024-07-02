@@ -1696,19 +1696,20 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .innovation__item {
-  width: 100%;
-  flex: 1 1 calc(50% - 60px);
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .innovation__item {
+    width: 100%;
     gap: 24px;
   }
 }
 @media screen and (max-width: 767.98px) {
   .innovation__item {
+    width: 100%;
     gap: 24px;
   }
 }
@@ -1745,14 +1746,38 @@ input[type=checkbox]:checked + label::after {
   white-space: wrap;
 }
 .innovation__img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 .innovation__img img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .innovation__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .innovation__img {
+    width: 100%;
+  }
 }
 .innovation__btn {
   max-width: 100px;

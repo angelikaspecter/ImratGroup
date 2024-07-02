@@ -24,15 +24,16 @@
         }
     }
     &__item {
-        width: 100%;
-        flex: 1 1 calc(100% / 2 - 60px);
+        width: auto;
         display: flex;
         flex-direction: column;
         gap: 40px;
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: 100%;
             gap: 24px;
         }
         @media screen and (max-width: 767.98px) {
+            width: 100%;
             gap: 24px;
         }
         &--wrap {
@@ -61,12 +62,26 @@
         }
     }
     &__img {
-        width: 100%;
+        width: auto;
         height: 100%;
         & img {
-            width: 100%;
+            width: auto;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                width: 100%;
+                object-fit: cover;
+            }
+            @media screen and (max-width: 767.98px) {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 767.98px) {
+            width: 100%;
         }
     }
     &__btn {
