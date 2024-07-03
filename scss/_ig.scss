@@ -16,6 +16,12 @@
     &__item {
         width: auto;
         height: 100%;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 767.98px) {
+            width: 100%;
+        }
         &--wrap {
             padding: 72px 100px 72px 144px;
             background-color: var(--accident-color);
@@ -44,6 +50,7 @@
     &__img {
         width: auto;
         height: 100%;
+        display: flex;
         @media screen and (min-width: 768px) and (max-width: 1439.98px) {
             width: 100%;
         }

@@ -1136,6 +1136,16 @@ input[type=checkbox]:checked + label::after {
   width: auto;
   height: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .ig__item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .ig__item {
+    width: 100%;
+  }
+}
 .ig__item--wrap {
   padding: 72px 100px 72px 144px;
   background-color: var(--accident-color);
@@ -1171,6 +1181,7 @@ input[type=checkbox]:checked + label::after {
 .ig__img {
   width: auto;
   height: 100%;
+  display: flex;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .ig__img {
