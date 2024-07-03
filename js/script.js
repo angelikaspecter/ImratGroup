@@ -152,37 +152,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let lastScrollTop = 0;
 const header = document.querySelector('.header');
-const firstBlock = document.querySelector('.first-block'); // Добавляем селектор для первого блока
-
-// Функция для проверки видимости элемента в области просмотра
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
 
 window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    // Если первый блок в поле видимости, убираем класс 'fixed'
-    if (isElementInViewport(firstBlock)) {
+    if (scrollTop < lastScrollTop && scrollTop <= 1000) {
         header.classList.remove('fixed');
     } else {
-        // Добавляем класс 'fixed' при скроле наверх
-        if (scrollTop < lastScrollTop) {
-            header.classList.add('fixed');
-        } else {
-            header.classList.remove('fixed');
-        }
+        header.classList.add('fixed');
     }
-
     lastScrollTop = scrollTop;
 });
-
 
 
 document.addEventListener("DOMContentLoaded", () => {

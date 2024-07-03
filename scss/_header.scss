@@ -6,11 +6,20 @@
     padding: 18px 144px;
     background-color: var(--light-primary);
     position: relative;
+    transition: top 0.3s;
     @media screen and (min-width: 768px) and (max-width: 1439.98px) {
         padding: 60px 32px 18px;
     }
     @media screen and (max-width: 767.98px) {
         padding: 60px 20px 18px;
+    }
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        transition: top 0.3s;
     }
     &__logo {
         width: 161px;
@@ -128,6 +137,7 @@
         font-weight: 500;
         color: var(--middle-primary);
         background-color: var(--light-primary);
+        cursor: pointer;
         &:hover,
         &:active,
         &:focus {

@@ -191,6 +191,7 @@ input[type=checkbox]:checked + label::after {
   padding: 18px 144px;
   background-color: var(--light-primary);
   position: relative;
+  transition: top 0.3s;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .header {
@@ -201,6 +202,14 @@ input[type=checkbox]:checked + label::after {
   .header {
     padding: 60px 20px 18px;
   }
+}
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: top 0.3s;
 }
 .header__logo {
   width: 161px;
@@ -331,6 +340,7 @@ input[type=checkbox]:checked + label::after {
   font-weight: 500;
   color: var(--middle-primary);
   background-color: var(--light-primary);
+  cursor: pointer;
 }
 .header__nav-link:hover, .header__nav-link:active, .header__nav-link:focus {
   color: var(--accident-color);
