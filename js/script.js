@@ -158,7 +158,7 @@ window.addEventListener('scroll', function () {
 
     if (scrollTop < lastScrollTop) {
         // Скролл вверх
-        if (scrollTop > 0) {
+        if (scrollTop > 1000) {
             header.classList.add('fixed');
             header.classList.remove('hidden');
         } else {
