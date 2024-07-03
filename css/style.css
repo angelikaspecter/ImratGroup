@@ -191,7 +191,8 @@ input[type=checkbox]:checked + label::after {
   padding: 18px 144px;
   background-color: var(--light-primary);
   position: relative;
-  transition: top 0.3s;
+  transition: top 0.3s, opacity 0.3s; /* Добавляем плавность для top и opacity */
+  opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .header {
@@ -209,7 +210,11 @@ input[type=checkbox]:checked + label::after {
   left: 0;
   right: 0;
   z-index: 999;
-  transition: top 0.3s;
+  transition: top 0.3s, opacity 0.3s; /* Добавляем плавность для top и opacity */
+}
+.header.hidden {
+  opacity: 0;
+  pointer-events: none; /* Скрываем взаимодействие при скрытом хедере */
 }
 .header__logo {
   width: 161px;

@@ -6,7 +6,8 @@
     padding: 18px 144px;
     background-color: var(--light-primary);
     position: relative;
-    transition: top 0.3s;
+    transition: top 0.3s, opacity 0.3s; /* Добавляем плавность для top и opacity */
+    opacity: 1;
     @media screen and (min-width: 768px) and (max-width: 1439.98px) {
         padding: 60px 32px 18px;
     }
@@ -19,7 +20,11 @@
         left: 0;
         right: 0;
         z-index: 999;
-        transition: top 0.3s;
+        transition: top 0.3s, opacity 0.3s; /* Добавляем плавность для top и opacity */
+    }
+    &.hidden {
+        opacity: 0;
+        pointer-events: none; /* Скрываем взаимодействие при скрытом хедере */
     }
     &__logo {
         width: 161px;

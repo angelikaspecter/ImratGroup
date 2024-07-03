@@ -156,13 +156,24 @@ const header = document.querySelector('.header');
 window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop < lastScrollTop && scrollTop <= 1000) {
-        header.classList.remove('fixed');
+    if (scrollTop < lastScrollTop) {
+        // Скролл вверх
+        if (scrollTop > 200) {
+            header.classList.add('fixed');
+            header.classList.remove('hidden');
+        } else {
+            header.classList.remove('fixed');
+            header.classList.remove('hidden');
+        }
     } else {
-        header.classList.add('fixed');
+        // Скролл вниз
+        if (scrollTop > 1000) {
+            header.classList.add('hidden');
+        }
     }
     lastScrollTop = scrollTop;
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
