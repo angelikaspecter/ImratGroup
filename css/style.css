@@ -1563,7 +1563,7 @@ input[type=checkbox]:checked + label::after {
   flex-wrap: wrap;
   gap: 50px;
 }
-.ig-products__footer .desc:hover {
+.ig-products__footer a.desc:hover {
   color: var(--middle-primary);
 }
 
