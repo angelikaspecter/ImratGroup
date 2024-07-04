@@ -3560,10 +3560,10 @@ input[type=checkbox]:checked + label::after {
   background-color: rgb(233, 233, 233);
   cursor: pointer;
 }
-.registration__item--goal:hover, .registration__item--goal:active, .registration__item--goal:focus, .registration__item--investor:hover, .registration__item--investor:active, .registration__item--investor:focus {
+.registration__item--goal:hover, .registration__item--goal:active, .registration__item--goal:focus, .registration__item--goal.active, .registration__item--investor:hover, .registration__item--investor:active, .registration__item--investor:focus, .registration__item--investor.active {
   background-color: rgba(45, 85, 81, 0.1);
 }
-.registration__item--goal:hover .desc, .registration__item--goal:active .desc, .registration__item--goal:focus .desc, .registration__item--investor:hover .desc, .registration__item--investor:active .desc, .registration__item--investor:focus .desc {
+.registration__item--goal:hover .desc, .registration__item--goal:active .desc, .registration__item--goal:focus .desc, .registration__item--goal.active .desc, .registration__item--investor:hover .desc, .registration__item--investor:active .desc, .registration__item--investor:focus .desc, .registration__item--investor.active .desc {
   color: var(--accident-color);
 }
 @media screen and (max-width: 767.98px) {
