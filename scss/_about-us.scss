@@ -78,6 +78,17 @@
         max-width: 200px;
         padding: 12px 60px;
         border-radius: 0;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.1);
+        }
+        @media screen and (max-width: 767.98px) {
+            max-width: 100%;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
     &__wrap {
         display: flex;

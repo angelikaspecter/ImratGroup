@@ -105,3 +105,25 @@
         }
     }
 }
+
+
+.blink {
+    &--frst {
+        animation: slow-blink 3s infinite;
+    }
+    &--scnd {
+        animation: slow-blink 7s infinite;
+    }
+}
+
+@keyframes slow-blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

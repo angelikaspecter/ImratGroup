@@ -157,7 +157,6 @@ window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop < lastScrollTop) {
-        // Скролл вверх
         if (scrollTop > 1000) {
             header.classList.add('fixed');
             header.classList.remove('hidden');
