@@ -26,6 +26,10 @@
             display: flex;
             align-items: center;
             gap: 24px;
+            @media screen and (max-width: 767.98px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
         &--column {
             display: flex;
