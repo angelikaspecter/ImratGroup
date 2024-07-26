@@ -4304,6 +4304,7 @@ input[type=checkbox]:checked + label::after {
   align-items: center;
   gap: 16px;
   white-space: nowrap;
+  text-decoration: none;
 }
 .footer__bottom {
   display: flex;
