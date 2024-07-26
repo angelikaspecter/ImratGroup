@@ -4285,8 +4285,19 @@ input[type=checkbox]:checked + label::after {
 }
 .footer__middle--top {
   display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer__middle--column {
+  display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.footer__middle--row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  white-space: nowrap;
 }
 .footer__bottom {
   display: flex;

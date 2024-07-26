@@ -24,8 +24,19 @@
         }
         &--top {
             display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        &--column {
+            display: flex;
             flex-direction: column;
             gap: 16px;
+        }
+        &--row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            white-space: nowrap;
         }
     }
     &__bottom {
