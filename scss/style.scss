@@ -30,11 +30,14 @@
 @import "_contact";
 @import "_error";
 @import "_footer";
+@import "_popup";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
     font-family: var(--font-primary);
 }
 
@@ -251,6 +254,26 @@
         &:disabled {
             color: rgba(129, 153, 151, 1);
             background-color: rgba(213, 221, 220, 1);
+        }
+    }
+    &--text {
+        width: auto;
+        transition: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: none;
+        &:hover {
+            transition: none;
+            &:disabled {
+                background-color: transparent;
+                cursor: none;
+            }
+        }
+        &:active {
+            transition: none;
+        }
+        &:disabled {
+            background-color: transparent;
         }
     }
     &--mobile {
